@@ -21,6 +21,4 @@ test:
 production:
   <<: *default
   adapter: postgresql
-  database: payjp_practice_production
-  username: payjp_practice
-  password: <%= ENV["PAYJP_PRACTICE_DATABASE_PASSWORD"] %>
+  url: <%= ENV['DATABASE_URL'] %>
